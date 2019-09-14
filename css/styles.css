@@ -1,29 +1,32 @@
 body {
-    /* display: flex; */
+font-size: 2em;    
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100vh;
 }
 
 .header {
-    /* height: 4em; */
     width: 100%;
-    /* border: 3px solid green; */
-    font-size: xx-large;
-    background-image: url("../img/pdc-logo.svg");
-    
+    height: 100px;
+    background-image: url("../img/csscms-logo.png");
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     background-position: left;  
     text-align: center;
-    /* background-size: 100%; */
+    background-color: #bada55;
     background-size: 200px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: oblique 90deg;
-    font-size: 3em;
-    margin-top: 10px;
+    font-size: 2.5em;
+
 }
 
 .header:before {
-    content: 'Process Digital Consulting';
+    content: "CSSCMS";
+    white-space: pre;
 }
+
 /* ==============================
 =============================== */
 
@@ -35,45 +38,26 @@ body {
     text-align: center;
     font-size: 1em;
 }
-/* .menu::before{
-    content: 'Menu Item 1';
-} */
 
 /* ==============================
 =============================== */
 
-.content:before {
-    content: 'Text inserted before via CSS knkn sdfsdf s df sf sadf  saf sad f sa f as fs df  sa f sa fs af s df saf';  
+.content:before { 
+    content: "Welcome to a terrible idea in leveraging CSS. \A \A Or is it? \A \A While at PressNomics I has talking to some folks about the various static site generators and it hit me: \"Why am I using Node or GoLang or Laravel or any other code to make HTML and CSS apprear on a screen?\" \A At some level, all I ever want to load is the content and style it with CSS. And that got me thinking. What if I made a CMS based mostly, as much as I could, on stuffing everything in CSS. The layout itself should look very minimal and the HTML should only have the job of placing the divs and handling the links (neither of which CSS can do on its own according my brief research doing this project. \A \"but what about images?\" I can hear some of you say...well more than one and I have an issue sure. But for one, I got this. \A Is this a good idea? I doubt it, but other than a couple limitations I can't seem to put my finger on why I could not combine the theme and normal global things I want to use a CMS to control and leverage my favorite markdown generator to produce the content to drop inside the content regions in post pages. \A But what if, I didn't even need to do that and for a text only blog (of which there is a specific niche for certain use cases) why can\'t I stuff ALL the content in classes called things like \"post1.css\" and the like.  In fact the link to the post below is made in such a manor. \A \A I have spent a few spare hours digging here and in my brain architected a Bash based parcer to swap \"\\n\" for \"\\A\" which is how CSS does new lines.  Anyhow, I welcome the discussion on why this is a terrible idea on twitter, where I am @MCDwayne. \A \A Thank you.  \A\A";
+    white-space: pre-wrap;
 }
-
 
 
 .content {
-    order: 1;
-    background-size: 100%;
-    /* background-color: #BADA55; */
-    /* background-image: url("../img/blacksquare.png"); */
-    background-image: linear-gradient(#BADA55, #f8defb);
-    height: 4em;
     width: 100%;
-}
-
-/* ==============================
-=============================== */
-
-
-
-/* ==============================
-=============================== */
-
-
-.cta {
-    background-size: 200px;
-    height: 4em;
-    width: 100%;
-    background-color: teal;
-    align-self: stretch;
-    order: 2;
+    padding:10px;
+    padding-bottom:5%;
+    /* position: relative; */
+    background-image: url(../img/example.jpg);
+    background-repeat: no-repeat;
+    background-position: right top; 
+    background-size: 150px; 
+    
 }
 
 /* ==============================
@@ -82,12 +66,20 @@ body {
 
 
 .footer {
-    background-size: 200px;
-    align-self: stretch;
-    background-color: red;
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
+     
+     left: 0;
+     text-align: center; 
+     background-color: #bada55;
+     position: fixed;
+     bottom: 0px;
+     width: 100%;
+     height: 2em; 
+     
+     
+}
+
+.footer:before {
+    content: "Copyright 2019 mcdwayne";
 }
 
 /* ==============================
