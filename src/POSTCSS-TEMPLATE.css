@@ -1,0 +1,12 @@
+.CONTENTTOREPLACE:before {
+    content: "";
+    white-space: pre-wrap;
+
+}
+
+.CONTENTTOREPLACE {
+    width: 100%;
+    padding:10px;
+    padding-bottom:5%;
+    position: relative;
+}

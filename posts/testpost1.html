@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -8,7 +9,7 @@
   <meta name="author" content="mcdwayne">
 
   <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/posrcss/postindex.css">
+  <link rel="stylesheet" href="../css/postcss/testpost1.css">
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
@@ -19,42 +20,41 @@
 
 
 <body>
- <div class="wrapper">
-  <div class="header">
-    <p class="header-links"><a href="../index.html">Home</a></p>
-  </div>
+ 
+        <div class="header">
+                <p class="header-links"><a href="postindex.html">Posts</a></p>
+              </div>
 
   <div class="menu">
     <a href="https://twitter.com/mcdwayne"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
     <a href="https://github.com/mcdwayne/csscms"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
 
-
-
 </div>
   
-  <div class="contentpostindex">
+  <div class="testpost1">
 <!-- ================================
-   DROP YOUR CONTENT HERE 
-  ==================================-->
-  <p>
-<a href='testpost1.html'>testpost1</a><br><br>
 
-  <a href="post-2.html">POST 2</a>
-  <br>
-  <br>
-  <a href="post-1.html">POST 1</a>
-</p>
+   DROP YOUR CONTENT HERE 
+
+  ==================================-->
+  <h1 id="toc_0">Enter the Bash commands</h1>
+
+  <p>In order to be a CMS, I need a way to programatically generate the files that are needed to make a new post happen. I also want to swap around variables to utilize the unique identifier, which in this case is the post name itself. </p>
+  
+  <p>I call it <code>postcreator.sh</code> because that is what it does. It uses <code>cp</code>, <code>sed</code>, and <code>ex</code> to get this done. No expternal libraries, just what is in bash.  Not tested on Linux, just a Macbook air as of the time of this writing.  And when did I write this?  Do you care? You COULD look at the <code>git log</code> to see when this file was made or modified. I am likely capable of someone leveraging HTML or something to grab the date when I post, but that is not in this version as of now.  </p>
+  
+  <p>Anyhow, get the tool as part of your clone of the <a href="https://github.com/mcdwayne/csscms">whole repo over from github</a>.</p>
+  
 <!-- ==================================
   END YOUR CONTENT HERE 
 
 =======================================-->
-
   </div>
-
+  
   <div class="footer">
+    <p></p>
   </div>
 
-</div>
 <!-- END OF BODY PART  -->
 
 </body>
