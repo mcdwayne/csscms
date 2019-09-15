@@ -24,5 +24,10 @@ sed -i '' "s/CONTENTTOREPLACE/${POSTNAME}/g" posts/${POSTNAME}.html
 
 sed -i '' "s/CONTENTTOREPLACE/${POSTNAME}/g" css/postcss/${POSTNAME}.css
 
-NEWPOSTHTMLINDEX="<a href='${POSTNAME}.html'>${POSTNAME}</a><br><br>"
+NEWPOSTHTMLINDEX="<a href='${POSTNAME}.html'>${POSTNAME}    created on $(date) </a><br><br>"
+
 ex -s -c "40i|${NEWPOSTHTMLINDEX}" -c x posts/postindex.html
+
+TIMESTAMP="<div class=\"createdate\"><p>Created: $(date)</p></div>"
+
+ex -s -c "40i|${TIMESTAMP}" -c x posts/${POSTNAME}.html

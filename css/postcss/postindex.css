@@ -1,12 +1,13 @@
-.content1:before {
+.postindex:before {
     content: "";
     white-space: pre-wrap;
 
 }
 
-.content1 {
+.postindex{
     width: 100%;
     padding:10px;
     padding-bottom:5%;
     position: relative;
+    font-size: 2em;
 }
