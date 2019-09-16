@@ -50,7 +50,7 @@ This deleted the `html` and `css` as well as removing the link from the `postind
 
 ## Modifying things globally?
 
-But what about the links in the menus and such that live outside the CSS? For that, there has been a solution for many, many years and it is called `sed` or `awk`. These tools are very well doucmented and can be seen in action in the `postcreator.sh` and `postdeleter.sh` tooling.  Theoretically you could build a command line to rule all of this, but, hey this is a proof of concept.  
+But what about the links in the menus and such that live outside the CSS? For that, there has been a solution for many, many years and it is called `sed` or `awk`. These tools are very well documented and can be seen in action in the `postcreator.sh` and `postdeleter.sh` tooling.  Theoretically you could build a command line to rule all of this, but, hey this is a proof of concept.  
 
 
 ## Software Updates?
