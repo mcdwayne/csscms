@@ -7,6 +7,5 @@
 .CONTENTTOREPLACE {
     width: 100%;
     padding:10px;
-    padding-bottom:5%;
-    position: relative;
+    padding-bottom:10vh;
 }
